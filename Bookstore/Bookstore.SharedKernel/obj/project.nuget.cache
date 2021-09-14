@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hXBNMKGCTVoqIPqvKiyXGrYNyIglx2bG29C9jTS3cnGmfp/LNpzAGapLoM9R2RQk1/V6q5QpT1S0yCVHugPXTg==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Projetos\\git\\clean-architecture\\Bookstore\\Bookstore.SharedKernel\\Bookstore.SharedKernel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bruno\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
