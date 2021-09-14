@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MediatR;
 
 namespace Bookstore.SharedKernel
 {
-    public class BaseDomainEvent
+    public class BaseDomainEvent : INotification
     {
+        public DateTime DateOccurred { get; protected set; } = DateTime.UtcNow;
     }
 }
