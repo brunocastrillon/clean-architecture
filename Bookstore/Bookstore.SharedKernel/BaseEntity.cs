@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Bookstore.SharedKernel
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
+        public int Id { get; set; }
 
+        public List<BaseDomainEvent> Events = new List<BaseDomainEvent>();
     }
 }

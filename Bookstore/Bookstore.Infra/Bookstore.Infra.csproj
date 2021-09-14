@@ -20,8 +20,4 @@
     <ProjectReference Include="..\Bookstore.SharedKernel\Bookstore.SharedKernel.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
 </Project>
