@@ -1,6 +1,6 @@
 <h1 align="center">Clean Architecture</h1>
 <p align="left">
-  O objetivo desse projeto é prover uma solucação com uma estrutura simples que possa ser usada para construir aplicações com foco no domínio, seguindo os princípios Domain Driven Design, visando alcançar os conceitos de arquitetura limpa vistos em:
+  O objetivo desse projeto é prover uma solucação com uma estrutura simples que possa ser usada para construir aplicações com foco no domínio, seguindo os princípios do Domain Driven Design, visando alcançar os conceitos de arquitetura limpa vistos em:
 </p>
 
 <ol>
