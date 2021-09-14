@@ -10,6 +10,11 @@ Projeto criado visando alcançar os conceitos de arquitetura limpa vistos em:
     </a>
   </li>
   <li>
+    <a href="https://aka.ms/MicroservicesEbook" target="_blank">
+      .NET Microservices: Architecture for containerized .NET applications
+    </a>
+  </li>  
+  <li>
     <a href="https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures" target="_blank">
       Common web application archtecture
     </a>  
@@ -19,4 +24,4 @@ Projeto criado visando alcançar os conceitos de arquitetura limpa vistos em:
       Uncle Bob
     </a>  
   </li>
-</ol
+</ol>
