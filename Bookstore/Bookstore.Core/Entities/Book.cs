@@ -12,3 +12,4 @@ namespace Bookstore.Core.Entities
             Title = title;
         }
     }
+}
