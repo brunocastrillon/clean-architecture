@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Events\" />
+    <Folder Include="AuthorAggregate\Handlers\" />
+    <Folder Include="AuthorAggregate\Specifications\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
   </ItemGroup>

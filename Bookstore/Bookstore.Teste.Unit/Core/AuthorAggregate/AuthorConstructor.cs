@@ -1,7 +1,7 @@
-﻿using Bookstore.Core.Entities;
+﻿using Bookstore.Core.AuthorAggregate;
 using Xunit;
 
-namespace Bookstore.Teste.Unit.Core.Entities
+namespace Bookstore.Teste.Unit.Core.AuthorAggregate
 {
     public class AuthorConstructor
     {
@@ -18,6 +18,13 @@ namespace Bookstore.Teste.Unit.Core.Entities
         {
             _testAuthor = CreateAuthor();
             Assert.Equal(_testName, _testAuthor.Name);
+        }
+
+        [Fact]
+        public void InitializeEmptyBookList()
+        {
+            _testAuthor = CreateAuthor();
+            Assert.NotNull(_testAuthor.Books);
         }
     }
 }

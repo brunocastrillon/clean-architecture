@@ -26,8 +26,8 @@ namespace Bookstore.Core.AuthorAggregate
         {
             _books.Add(newBook);
 
-            var newEvent = new NewBookAdded(this, newBook);
-            Events.Add(newEvent);
+            var newBookAdded = new NewBookAdded(this, newBook);
+            Events.Add(newBookAdded);
         }
     }
 }
