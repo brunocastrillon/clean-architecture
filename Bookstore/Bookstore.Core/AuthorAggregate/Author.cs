@@ -1,9 +1,10 @@
-﻿using Bookstore.Core.Entities;
+﻿using Bookstore.Core.AuthorAggregate.Events;
+using Bookstore.Core.Entities;
 using Bookstore.SharedKernel;
 using Bookstore.SharedKernel.Interfaces;
 using System.Collections.Generic;
 
-namespace Bookstore.Core.AuthorAggregate.Author
+namespace Bookstore.Core.AuthorAggregate
 {
     public class Author : BaseEntity, IAggregateRoot
     {
@@ -24,6 +25,9 @@ namespace Bookstore.Core.AuthorAggregate.Author
         public void AddBook(Book newBook)
         {
             _books.Add(newBook);
+
+            var newEvent = new NewBookAdded(this, newBook);
+            Events.Add(newEvent);
         }
     }
 }
