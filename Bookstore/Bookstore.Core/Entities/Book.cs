@@ -1,11 +1,11 @@
 ﻿using Bookstore.SharedKernel;
-using Bookstore.SharedKernel.Interfaces;
 
 namespace Bookstore.Core.Entities
 {
-    public class Book : BaseEntity, IAggregateRoot
+    public class Book : BaseEntity
     {
         public string Title { get; set; }
+        public string Description { get; set; }
 
         public Book(string title)
         {

@@ -9,3 +9,4 @@ C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.SharedKernel\obj\Debu
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.SharedKernel\obj\Debug\net5.0\Bookstore.SharedKernel.dll
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.SharedKernel\obj\Debug\net5.0\ref\Bookstore.SharedKernel.dll
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.SharedKernel\obj\Debug\net5.0\Bookstore.SharedKernel.pdb
+C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.SharedKernel\obj\Debug\net5.0\Bookstore.SharedKernel.csproj.AssemblyReference.cache
