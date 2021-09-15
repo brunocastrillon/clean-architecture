@@ -1,4 +1,5 @@
-﻿using Bookstore.Core.Entities;
+﻿using Bookstore.Core.AuthorAggregate;
+using Bookstore.Core.Entities;
 using Bookstore.Infra.Data.Config;
 using Bookstore.SharedKernel;
 using MediatR;

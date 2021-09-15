@@ -1,4 +1,4 @@
-using Bookstore.Core.Entities;
+using Bookstore.Core.AuthorAggregate;
 using Bookstore.Infra.Data;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +16,7 @@ namespace Bookstore.Teste.Integration.Data
             var serviceProvider = new ServiceCollection().AddEntityFrameworkInMemoryDatabase().BuildServiceProvider();
             var builder = new DbContextOptionsBuilder<DataBaseContext>();                                                   
 
-            builder.UseInMemoryDatabase("mySupply").UseInternalServiceProvider(serviceProvider);
+            builder.UseInMemoryDatabase("Bookstore").UseInternalServiceProvider(serviceProvider);
 
             return builder.Options;
         }

@@ -1,4 +1,4 @@
-﻿using Bookstore.Core.Entities;
+﻿using Bookstore.Core.AuthorAggregate;
 using System.Collections.Generic;
 using System.Reflection;
 using Module = Autofac.Module;
