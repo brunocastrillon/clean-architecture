@@ -12,7 +12,7 @@ namespace Bookstore.Teste.Unit.Core.AuthorAggregate
         [Fact]
         public void AddBook()
         {
-            Book bookTest = new Book("Domain-Driven Design");
+            Book bookTest = new Book("Domain-Driven Design", "Alguma descrição");
             _authorTest.AddBook(bookTest);
 
             Assert.Contains(bookTest, _authorTest.Books);

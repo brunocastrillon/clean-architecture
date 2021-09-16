@@ -91,3 +91,4 @@ C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.API\obj\Debug\net5.0\
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.API\obj\Debug\net5.0\ref\Bookstore.API.dll
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.API\obj\Debug\net5.0\Bookstore.API.pdb
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.API\obj\Debug\net5.0\Bookstore.API.genruntimeconfig.cache
+C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.API\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll

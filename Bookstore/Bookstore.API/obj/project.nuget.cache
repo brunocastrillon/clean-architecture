@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6ZB8VuME2CSvbHNPZg1gpLrhLTpdQgCfnbPcb73qF/gFLXZiYO4z1qK+IlsnIu8hk2tXTc2/NlPX0oIV/kW+ww==",
+  "dgSpecHash": "1iVzQ1tJDUV5h3FLb8tgmP8hVYMotLnn8Jjvvjp9lgZmnrOlCwAm2W1tp4yVrUtuHnlGCE+uplPDRxbWqNEi3w==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Projetos\\git\\clean-architecture\\Bookstore\\Bookstore.API\\Bookstore.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bruno\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.9\\microsoft.aspnetcore.jsonpatch.5.0.9.nupkg.sha512",

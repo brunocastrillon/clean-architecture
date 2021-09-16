@@ -461,3 +461,4 @@ C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.Teste.Functional\obj\
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.Teste.Functional\obj\Debug\net5.0\ref\Bookstore.Teste.Functional.dll
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.Teste.Functional\obj\Debug\net5.0\Bookstore.Teste.Functional.pdb
 C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.Teste.Functional\obj\Debug\net5.0\Bookstore.Teste.Functional.genruntimeconfig.cache
+C:\Dev\Projetos\git\clean-architecture\Bookstore\Bookstore.Teste.Functional\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll

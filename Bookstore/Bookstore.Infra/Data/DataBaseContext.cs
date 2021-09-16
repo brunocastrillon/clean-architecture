@@ -27,7 +27,13 @@ namespace Bookstore.Infra.Data
             modelBuilder.ApplyConfiguration(new AuthorConfiguration());
             modelBuilder.ApplyConfiguration(new BookConfiguration());
 
+            var assembly = typeof(DataBaseContext).Assembly;
+            modelBuilder.ApplyConfigurationsFromAssembly(assembly);
+            
             base.OnModelCreating(modelBuilder);
+
+            //base.OnModelCreating(modelBuilder);
+            //modelBuilder.ApplyAllConfigurationsFromCurrentAssembly();
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())

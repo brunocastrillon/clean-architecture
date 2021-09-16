@@ -6,11 +6,12 @@ namespace Bookstore.Teste.Unit.Core.Entities
     public class BookConstructor
     {
         private string _testTitle = "Clean Architecture";
+        private string _testDescription = "alguma descrição";
         private Book _testBook = null;
 
         public Book CreateBook()
         {
-            return new Book(_testTitle);
+            return new Book(_testTitle, _testDescription);
         }
 
         [Fact]

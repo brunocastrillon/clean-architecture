@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kYJc3d+kxXp+B1LX7N5+0Bp9DTdsdpITL72xRWSdNv9nIfd6fbmCloDPXsZzaSvOZE3O3iPQyRTeZW9jXxp2UA==",
+  "dgSpecHash": "7+aQ0CgAcldqw0LPoWtjx8DT8NNLqGbcVt7+xDjyDKcjlr+BefQlUpHMrdIpYCl8HGTAViA8POJaiR9iHySozA==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Projetos\\git\\clean-architecture\\Bookstore\\Bookstore.Teste.Functional\\Bookstore.Teste.Functional.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bruno\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.9\\microsoft.aspnetcore.jsonpatch.5.0.9.nupkg.sha512",
