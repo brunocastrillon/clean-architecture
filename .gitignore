@@ -3,35 +3,17 @@
 
 Bookstore/.vs/Bookstore/v16/.suo
 
-Bookstore/Bookstore.API/bin/
-Bookstore/Bookstore.API/obj/
+Bookstore/Bookstore.Core.Application/bin/
+Bookstore/Bookstore.Core.Application/obj/
 
 Bookstore/Bookstore.Core.Domain/bin/
 Bookstore/Bookstore.Core.Domain/obj/
 
-Bookstore/Bookstore.Core/bin/
-Bookstore/Bookstore.Core/obj/
+Bookstore/Bookstore.Infra.Data/bin/
+Bookstore/Bookstore.Infra.Data/obj/
 
-Bookstore/Bookstore.Infra/bin/
-Bookstore/Bookstore.Infra/obj/
-
-Bookstore/Bookstore.SharedKernel/bin/
-Bookstore/Bookstore.SharedKernel/obj/
+Bookstore/Bookstore.Test.Integration/bin/
+Bookstore/Bookstore.Test.Integration/obj/
 
 Bookstore/Bookstore.Test.Unit/bin/
 Bookstore/Bookstore.Test.Unit/obj/
-
-Bookstore/Bookstore.Teste.Functional/bin/
-Bookstore/Bookstore.Teste.Functional/obj/
-
-Bookstore/Bookstore.Teste.Integration/bin/
-Bookstore/Bookstore.Teste.Integration/obj/
-
-Bookstore/Bookstore.Teste.Unit/bin/
-Bookstore/Bookstore.Teste.Unit/obj/
-
-Bookstore/Bookstore.Core.Application/bin/
-Bookstore/Bookstore.Core.Application/obj/
-
-Bookstore/Bookstore.Infra.Data/bin/
-Bookstore/Bookstore.Infra.Data/obj/
