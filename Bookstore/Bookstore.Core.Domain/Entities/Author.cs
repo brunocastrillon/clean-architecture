@@ -27,8 +27,10 @@ namespace Bookstore.Core.Domain.Entities
         public void AddBook(Book newBook)
         {
             DomainValidationException.When(newBook is null, "a book is required");
-
-            Books.Add(newBook);
+            Books = new List<Book>
+            {
+                newBook
+            };
         }
 
         private void ValidateDomain(string name, string bio)

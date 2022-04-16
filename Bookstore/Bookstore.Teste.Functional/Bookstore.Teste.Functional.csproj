@@ -27,7 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bookstore.API\Bookstore.API.csproj" />
-    <ProjectReference Include="..\Bookstore.Teste.Unit\Bookstore.Teste.Unit.csproj" />
   </ItemGroup>
 
 </Project>
