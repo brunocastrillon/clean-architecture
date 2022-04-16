@@ -26,9 +26,4 @@
     <ProjectReference Include="..\Bookstore.Infra.Data\Bookstore.Infra.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\Book\" />
-    <Folder Include="Data\Author\" />
-  </ItemGroup>
-
 </Project>

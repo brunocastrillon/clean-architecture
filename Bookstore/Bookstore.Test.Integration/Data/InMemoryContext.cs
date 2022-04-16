@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Bookstore.Test.Integration.Data.Category
+namespace Bookstore.Test.Integration.Data
 {
-    public class CategoryRepository
+    public class InMemoryContext
     {
         protected ApplicationDbContext _applicationDbContext;
 
@@ -16,15 +16,6 @@ namespace Bookstore.Test.Integration.Data.Category
             builder.UseInMemoryDatabase("Bookstore").UseInternalServiceProvider(serviceProvider);
 
             return builder.Options;
-        }
-
-        protected Infra.Data.Repository.CategoryRepository GetRepository()
-        {
-            var options = DbContextOptions();
-
-            _applicationDbContext = new ApplicationDbContext(options);
-
-            return new Infra.Data.Repository.CategoryRepository(_applicationDbContext);
         }
     }
 }
