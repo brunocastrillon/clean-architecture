@@ -6,14 +6,14 @@ namespace Bookstore.Core.Application.Services.Category
 {
     public interface ICategoryService
     {
+        Task Add(CategoryDTO categoryDTO);
+
         Task<IEnumerable<CategoryDTO>> Get();
 
         Task<CategoryDTO> GetById(int id);
 
-        Task Add(CategoryDTO categoryDTO);
+        Task Remove(int id);
 
         Task Update(CategoryDTO categoryDTO);
-
-        Task Remove(int id);
     }
 }
