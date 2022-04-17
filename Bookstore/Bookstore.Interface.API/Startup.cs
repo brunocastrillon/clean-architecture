@@ -29,12 +29,10 @@ namespace Bookstore.Interface.API
             //services.AddJWT(Configuration);
 
             services.AddCors();
-
+            services.AddSwagger();
             services.AddControllers()
                     .AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))
                     .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-
-            //services.AddSwagger();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
