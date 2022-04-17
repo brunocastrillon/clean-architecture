@@ -15,6 +15,9 @@ Bookstore/Bookstore.Infra.Data/obj/
 Bookstore/Bookstore.Infra.IoC/obj/
 Bookstore/Bookstore.Infra.IoC/bin/
 
+Bookstore/Bookstore.Interface.API/bin/
+Bookstore/Bookstore.Interface.API/obj/
+
 Bookstore/Bookstore.Test.Integration/bin/
 Bookstore/Bookstore.Test.Integration/obj/
 
