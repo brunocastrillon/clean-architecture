@@ -12,6 +12,9 @@ Bookstore/Bookstore.Core.Domain/obj/
 Bookstore/Bookstore.Infra.Data/bin/
 Bookstore/Bookstore.Infra.Data/obj/
 
+Bookstore/Bookstore.Infra.IoC/obj/
+Bookstore/Bookstore.Infra.IoC/bin/
+
 Bookstore/Bookstore.Test.Integration/bin/
 Bookstore/Bookstore.Test.Integration/obj/
 
