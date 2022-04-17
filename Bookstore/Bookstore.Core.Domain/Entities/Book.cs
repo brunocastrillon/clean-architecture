@@ -34,7 +34,7 @@ namespace Bookstore.Core.Domain.Entities
             DomainValidationException.When(string.IsNullOrEmpty(publicationYear), "publicationYear is required");
             DomainValidationException.When(title.Length < 3, "name too short, min. 3 char");
             DomainValidationException.When(description.Length < 3, "description too short, min. 3 char");
-            DomainValidationException.When(publicationYear.Length < 4, "bio too short, min. 4 char");
+            DomainValidationException.When(publicationYear.Length < 4, "publicationYear too short, min. 4 char");
 
             Title = title;
             Description = description;

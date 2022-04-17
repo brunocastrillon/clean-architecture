@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Bookstore.Core.Application.DTO;
 using Bookstore.Core.Domain.Contracts;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -24,24 +23,30 @@ namespace Bookstore.Core.Application.Services.Category
             await _categoryRepository.CreateAsync(category);
         }
 
-        public Task<IEnumerable<CategoryDTO>> Get()
+        public async Task<IEnumerable<CategoryDTO>> Get()
         {
-            throw new NotImplementedException();
+            var categories = await _categoryRepository.GetAsync();
+            var mapped = _mapper.Map<IEnumerable<CategoryDTO>>(categories);
+            return mapped;
         }
 
-        public Task<CategoryDTO> GetById(int id)
+        public async Task<CategoryDTO> GetById(int id)
         {
-            throw new NotImplementedException();
+            var category = await _categoryRepository.GetByIdAsync(id);
+            var mapped = _mapper.Map<CategoryDTO>(category);
+            return mapped;
         }
 
-        public Task Remove(int id)
+        public async Task Remove(int id)
         {
-            throw new NotImplementedException();
+            var category = _categoryRepository.GetByIdAsync(id).Result;
+            await _categoryRepository.DeleteAsync(category);
         }
 
-        public Task Update(CategoryDTO categoryDTO)
+        public async Task Update(CategoryDTO categoryDTO)
         {
-            throw new NotImplementedException();
+            var category = _mapper.Map<Domain.Entities.Category>(categoryDTO);
+            await _categoryRepository.UpdateAsync(category);
         }
     }
 }
