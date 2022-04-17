@@ -7,7 +7,7 @@ namespace Bookstore.Infra.IoC.Databases
 {
     public static class Sqlite
     {
-        public static IServiceCollection AddDataBase(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddSqlite(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(

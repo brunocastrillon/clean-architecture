@@ -5,6 +5,8 @@ namespace Bookstore.Core.Application.DTO
 {
     public class AuthorDTO
     {
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "name is required")]
         [MinLength(3)]
         [MaxLength(100)]

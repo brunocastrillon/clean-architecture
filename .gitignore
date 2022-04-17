@@ -15,8 +15,12 @@ Bookstore/Bookstore.Infra.Data/obj/
 Bookstore/Bookstore.Infra.IoC/obj/
 Bookstore/Bookstore.Infra.IoC/bin/
 
+Bookstore/Bookstore.Interface.API/bin/
+Bookstore/Bookstore.Interface.API/obj/
+
 Bookstore/Bookstore.Test.Integration/bin/
 Bookstore/Bookstore.Test.Integration/obj/
 
 Bookstore/Bookstore.Test.Unit/bin/
 Bookstore/Bookstore.Test.Unit/obj/
+Bookstore/.vs/Bookstore/v16/TestStore/0/
