@@ -17,36 +17,42 @@ namespace Bookstore.Core.Application.Services.Author
             _mapper = mapper;
         }
 
-        public async Task Add(AuthorDTO authorDTO)
+        public async Task<AuthorDTO> Add(AuthorDTO dto)
         {
-            var author = _mapper.Map<Domain.Entities.Author>(authorDTO);
-            await _authorRepository.CreateAsync(author);
+            var entity = _mapper.Map<Domain.Entities.Author>(dto);
+            var entityResult = await _authorRepository.CreateAsync(entity);
+            var dtoResult = _mapper.Map<AuthorDTO>(entityResult);
+            return dtoResult;
         }
 
         public async Task<IEnumerable<AuthorDTO>> Get()
         {
-            var authors = await _authorRepository.GetAsync();
-            var mapped = _mapper.Map<IEnumerable<AuthorDTO>>(authors);
-            return mapped;
+            var entity = await _authorRepository.GetAsync();
+            var dto = _mapper.Map<IEnumerable<AuthorDTO>>(entity);
+            return dto;
         }
 
         public async Task<AuthorDTO> GetById(int id)
         {
-            var author = await _authorRepository.GetByIdAsync(id);
-            var mapped = _mapper.Map<AuthorDTO>(author);
-            return mapped;
+            var entity = await _authorRepository.GetByIdAsync(id);
+            var dto = _mapper.Map<AuthorDTO>(entity);
+            return dto;
         }
 
-        public async Task Remove(int id)
+        public async Task<AuthorDTO> Remove(int id)
         {
-            var author = _authorRepository.GetByIdAsync(id).Result;
-            await _authorRepository.DeleteAsync(author);
+            var entity = _authorRepository.GetByIdAsync(id).Result;
+            var entityResult = await _authorRepository.DeleteAsync(entity);
+            var dtoResult = _mapper.Map<AuthorDTO>(entityResult);
+            return dtoResult;
         }
 
-        public async Task Update(AuthorDTO authorDTO)
+        public async Task<AuthorDTO> Update(AuthorDTO dto)
         {
-            var author = _mapper.Map<Domain.Entities.Author>(authorDTO);
-            await _authorRepository.UpdateAsync(author);
+            var entity = _mapper.Map<Domain.Entities.Author>(dto);
+            var entityResult = await _authorRepository.UpdateAsync(entity);
+            var dtoResult = _mapper.Map<AuthorDTO>(entityResult);
+            return dtoResult;
         }
     }
 }
