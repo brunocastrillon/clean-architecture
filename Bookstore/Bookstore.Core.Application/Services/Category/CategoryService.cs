@@ -17,36 +17,42 @@ namespace Bookstore.Core.Application.Services.Category
             _mapper = mapper;
         }
 
-        public async Task Add(CategoryDTO categoryDTO)
+        public async Task<CategoryDTO> Add(CategoryDTO dto)
         {
-            var category = _mapper.Map<Domain.Entities.Category>(categoryDTO);
-            await _categoryRepository.CreateAsync(category);
+            var entity = _mapper.Map<Domain.Entities.Category>(dto);
+            var entityResult = await _categoryRepository.CreateAsync(entity);
+            var dtoResult = _mapper.Map<CategoryDTO>(entityResult);
+            return dtoResult;
         }
 
         public async Task<IEnumerable<CategoryDTO>> Get()
         {
-            var categories = await _categoryRepository.GetAsync();
-            var mapped = _mapper.Map<IEnumerable<CategoryDTO>>(categories);
-            return mapped;
+            var entity = await _categoryRepository.GetAsync();
+            var dto = _mapper.Map<IEnumerable<CategoryDTO>>(entity);
+            return dto;
         }
 
         public async Task<CategoryDTO> GetById(int id)
         {
-            var category = await _categoryRepository.GetByIdAsync(id);
-            var mapped = _mapper.Map<CategoryDTO>(category);
-            return mapped;
+            var entity = await _categoryRepository.GetByIdAsync(id);
+            var dto = _mapper.Map<CategoryDTO>(entity);
+            return dto;
         }
 
-        public async Task Remove(int id)
+        public async Task<CategoryDTO> Remove(int id)
         {
-            var category = _categoryRepository.GetByIdAsync(id).Result;
-            await _categoryRepository.DeleteAsync(category);
+            var entity = _categoryRepository.GetByIdAsync(id).Result;
+            var entityResult = await _categoryRepository.DeleteAsync(entity);
+            var dtoResult = _mapper.Map<CategoryDTO>(entityResult);
+            return dtoResult;
         }
 
-        public async Task Update(CategoryDTO categoryDTO)
+        public async Task<CategoryDTO> Update(CategoryDTO dto)
         {
-            var category = _mapper.Map<Domain.Entities.Category>(categoryDTO);
-            await _categoryRepository.UpdateAsync(category);
+            var entity = _mapper.Map<Domain.Entities.Category>(dto);
+            var entityResult = await _categoryRepository.UpdateAsync(entity);
+            var dtoResult = _mapper.Map<CategoryDTO>(entityResult);
+            return dtoResult;
         }
     }
 }

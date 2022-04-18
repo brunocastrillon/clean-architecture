@@ -20,54 +20,54 @@ namespace Bookstore.Interface.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AuthorDTO>>> Get()
         {
-            var authors = await _authorService.Get();
+            var dtos = await _authorService.Get();
 
-            if (authors == null) return NotFound("authors not found");
+            if (dtos == null) return NoContent();
 
-            return Ok(authors);
+            return Ok(dtos);
         }
 
-        [HttpGet("{id:int}", Name = "GetById")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<AuthorDTO>> Get(int id)
         {
-            var author = await _authorService.GetById(id);
+            var dto = await _authorService.GetById(id);
 
-            if (author == null) return NotFound("author not found");
+            if (dto == null) return NoContent();
 
-            return Ok(author);
+            return Ok(dto);
         }
 
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] AuthorDTO dto)
         {
-            if (dto == null) return BadRequest("Invalid Data");
+            if (dto == null) return BadRequest("invalid Data");
 
-            await _authorService.Add(dto);
+            var resultDTO = await _authorService.Add(dto);
 
-            return new CreatedAtRouteResult("GetById", new { id = dto.Id }, dto);
+            return Ok(resultDTO);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] AuthorDTO dto)
         {
             if (id != dto.Id) return BadRequest();
             if (dto == null) return BadRequest();
 
-            await _authorService.Update(dto);
+            var resultDTO = await _authorService.Update(dto);
 
-            return Ok(dto);
+            return Ok(resultDTO);
         }
 
-        [HttpDelete("{id:int}")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult<AuthorDTO>> Delete(int id)
         {
-            var author = await _authorService.GetById(id);
+            var dto = await _authorService.GetById(id);
 
-            if (author == null) return NotFound("author not found");
+            if (dto == null) return NoContent();
 
-            await _authorService.Remove(id);
+            var resultDTO = await _authorService.Remove(id);
 
-            return Ok(author);
+            return Ok(resultDTO);
         }
     }
 }

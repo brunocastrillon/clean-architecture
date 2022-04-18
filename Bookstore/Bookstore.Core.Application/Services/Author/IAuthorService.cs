@@ -6,13 +6,14 @@ namespace Bookstore.Core.Application.Services.Author
 {
     public interface IAuthorService
     {
-        Task Add(AuthorDTO authorDTO);
+        Task<AuthorDTO> Add(AuthorDTO authorDTO);
 
         Task<IEnumerable<AuthorDTO>> Get();
 
         Task<AuthorDTO> GetById(int id);
-        Task Remove(int id);
 
-        Task Update(AuthorDTO authorDTO);
+        Task<AuthorDTO> Remove(int id);
+
+        Task<AuthorDTO> Update(AuthorDTO authorDTO);
     }
 }

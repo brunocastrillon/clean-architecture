@@ -6,14 +6,14 @@ namespace Bookstore.Core.Application.Services.Book
 {
     public interface IBookService
     {
-        Task Add(BookDTO bookDTO);
+        Task<BookDTO> Add(BookDTO bookDTO);
 
         Task<IEnumerable<BookDTO>> Get();
 
         Task<BookDTO> GetById(int id);
 
-        Task Remove(int id);
+        Task<BookDTO> Remove(int id);
 
-        Task Update(BookDTO bookDTO);
+        Task<BookDTO> Update(BookDTO bookDTO);
     }
 }
