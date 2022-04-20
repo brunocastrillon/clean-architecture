@@ -13,12 +13,12 @@ namespace Bookstore.Infra.Data.Repository
 
         public async Task<IEnumerable<Author>> GetAsync()
         {
-            return await _context.Author.ToListAsync();
+            return await _context.Authors.ToListAsync();
         }
 
         public async Task<Author> GetByIdAsync(int id)
         {
-            return await _context.Author.FindAsync(id);
+            return await _context.Authors.FindAsync(id);
         }
     }
 }
