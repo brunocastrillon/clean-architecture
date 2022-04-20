@@ -10,7 +10,7 @@ namespace Bookstore.Infra.IoC
         {
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bookstore.Interface.API v1", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bookstore API V1", Version = "V1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {

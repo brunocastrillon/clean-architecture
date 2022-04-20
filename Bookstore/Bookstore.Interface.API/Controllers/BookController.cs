@@ -20,54 +20,54 @@ namespace Bookstore.Interface.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BookDTO>>> Get()
         {
-            var books = await _bookService.Get();
+            var dtos = await _bookService.Get();
 
-            if (books == null) return NotFound("books not found");
+            if (dtos == null) return NoContent();
 
-            return Ok(books);
+            return Ok(dtos);
         }
 
-        [HttpGet("{id:int}", Name = "GetById")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<BookDTO>> Get(int id)
         {
-            var book = await _bookService.GetById(id);
+            var dto = await _bookService.GetById(id);
 
-            if (book == null) return NotFound("book not found");
+            if (dto == null) return NoContent();
 
-            return Ok(book);
+            return Ok(dto);
         }
 
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] BookDTO dto)
         {
-            if (dto == null) return BadRequest("Invalid Data");
+            if (dto == null) return BadRequest("invalid data");
 
-            await _bookService.Add(dto);
+            var resultDTO = await _bookService.Add(dto);
 
-            return new CreatedAtRouteResult("GetById", new { id = dto.Id }, dto);
+            return Ok(resultDTO);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] BookDTO dto)
         {
             if (id != dto.Id) return BadRequest();
             if (dto == null) return BadRequest();
 
-            await _bookService.Update(dto);
+            var resultDTO = await _bookService.Update(dto);
 
-            return Ok(dto);
+            return Ok(resultDTO);
         }
 
-        [HttpDelete("{id:int}")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult<BookDTO>> Delete(int id)
         {
-            var book = await _bookService.GetById(id);
+            var dto = await _bookService.GetById(id);
 
-            if (book == null) return NotFound("book not found");
+            if (dto == null) return NoContent();
 
-            await _bookService.Remove(id);
+            var resultDTO = await _bookService.Remove(id);
 
-            return Ok(book);
+            return Ok(resultDTO);
         }
     }
 }

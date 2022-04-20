@@ -11,12 +11,12 @@ namespace Bookstore.Core.Application.DTO
         [MinLength(3)]
         [MaxLength(100)]
         [DisplayName("Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         [Required(ErrorMessage = "bio is required")]
         [MinLength(3)]
         [MaxLength(300)]
         [DisplayName("Bio")]
-        public string Bio { get; private set; }
+        public string Bio { get; set; }
     }
 }
