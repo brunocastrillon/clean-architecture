@@ -1,10 +1,12 @@
 ﻿using Bookstore.Core.Domain.Entities;
 using Bookstore.Core.Domain.Entities.Auth;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Bookstore.Infra.Data.Context
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser> //: DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
@@ -14,13 +16,13 @@ namespace Bookstore.Infra.Data.Context
 
         #region Auth
 
-            public DbSet<Role> Roles { get; set; }
-            public DbSet<RoleClaim> RoleClaims { get; set; }
-            public DbSet<User> Users { get; set; }
-            public DbSet<UserClaim> UserClaims { get; set; }
-            public DbSet<UserLogin> UserLogins { get; set; }
-            public DbSet<UserRole> UserRoles { get; set; }
-            public DbSet<UserToken> UserTokens { get; set; } 
+            //public DbSet<Role> Roles { get; set; }
+            //public DbSet<RoleClaim> RoleClaims { get; set; }
+            //public DbSet<User> Users { get; set; }
+            //public DbSet<UserClaim> UserClaims { get; set; }
+            //public DbSet<UserLogin> UserLogins { get; set; }
+            //public DbSet<UserRole> UserRoles { get; set; }
+            //public DbSet<UserToken> UserTokens { get; set; } 
 
         #endregion
 

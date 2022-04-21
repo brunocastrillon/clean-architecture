@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Bookstore.Core.Application.DTO;
 using Bookstore.Core.Domain.Entities;
+using Bookstore.Core.Domain.Entities.Auth;
 
 namespace Bookstore.Core.Application.AutoMapper
 {
@@ -11,6 +12,8 @@ namespace Bookstore.Core.Application.AutoMapper
             CreateMap<Author, AuthorDTO>().ReverseMap();
             CreateMap<Book, BookDTO>().ReverseMap();
             CreateMap<Category, CategoryDTO>().ReverseMap();
+
+            CreateMap<User, UserDTO>().ReverseMap();
         }
     }
 }

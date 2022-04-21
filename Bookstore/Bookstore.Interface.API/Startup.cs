@@ -25,7 +25,7 @@ namespace Bookstore.Interface.API
             services.AddRepository();
             services.AddService();
 
-            //services.AddIdentity();
+            services.AddIdentity();
             //services.AddJWT(Configuration);
 
             services.AddCors();
