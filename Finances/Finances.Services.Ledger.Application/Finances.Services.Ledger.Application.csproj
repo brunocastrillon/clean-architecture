@@ -17,10 +17,4 @@
     <ProjectReference Include="..\Finances.Services.Ledger.Domain\Finances.Services.Ledger.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="Abstractions\" />
-    <Folder Include="Queries\" />
-  </ItemGroup>
-
 </Project>
