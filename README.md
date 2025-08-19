@@ -1,6 +1,6 @@
 # 📊 Castri.Finance
 
-[![.NET](https://img.shields.io/badge/.NET-8.0-blue?logo=dotnet)](https://dotnet.microsoft.com/)
+[![.NET](https://img.shields.io/badge/.NET-9.0-blue?logo=dotnet)](https://dotnet.microsoft.com/)
 [![Build](https://img.shields.io/github/actions/workflow/status/SEU_USUARIO/Castri.Finance/ci.yml?branch=main&logo=github)](https://github.com/SEU_USUARIO/Castri.Finance/actions)
 [![Coverage](https://img.shields.io/badge/coverage-coverage%20report-informational)](#-testes)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
