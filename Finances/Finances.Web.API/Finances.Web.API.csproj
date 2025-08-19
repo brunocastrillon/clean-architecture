@@ -23,4 +23,8 @@
     <ProjectReference Include="..\Finances.Services.Usage.Application\Finances.Services.Usage.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Modules\Ledger\" />
+  </ItemGroup>
+
 </Project>
