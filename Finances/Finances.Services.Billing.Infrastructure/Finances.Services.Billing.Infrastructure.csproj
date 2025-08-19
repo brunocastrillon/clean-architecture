@@ -22,4 +22,10 @@
     <ProjectReference Include="..\Finances.Services.Billing.Domain\Finances.Services.Billing.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Messaging\" />
+    <Folder Include="Persistence\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>

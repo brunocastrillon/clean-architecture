@@ -22,4 +22,10 @@
     <ProjectReference Include="..\Finances.Services.Dunning.Domain\Finances.Services.Dunning.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Messaging\" />
+    <Folder Include="Persistence\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>

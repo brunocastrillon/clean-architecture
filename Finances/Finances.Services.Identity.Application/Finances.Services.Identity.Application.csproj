@@ -17,4 +17,10 @@
     <ProjectReference Include="..\Finances.Services.Identity.Domain\Finances.Services.Identity.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
 </Project>

@@ -17,4 +17,10 @@
     <ProjectReference Include="..\Finances.Services.Billing.Domain\Finances.Services.Billing.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
 </Project>
