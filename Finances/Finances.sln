@@ -95,7 +95,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finances.Tests.Unit.Dunning
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Deploy", "05 - Deploy", "{F586986B-9515-4837-9864-E66230446EAD}"
 	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
+		..\..\..\..\Users\bruno\Downloads\docker-compose.yml = ..\..\..\..\Users\bruno\Downloads\docker-compose.yml
+		..\..\..\..\Users\bruno\Downloads\Dockerfile = ..\..\..\..\Users\bruno\Downloads\Dockerfile
+		..\..\..\..\Users\bruno\Downloads\README-deploy.md = ..\..\..\..\Users\bruno\Downloads\README-deploy.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Docs", "06 - Docs", "{5E7DF630-3665-49C0-BAB0-E35B1BA1895B}"
